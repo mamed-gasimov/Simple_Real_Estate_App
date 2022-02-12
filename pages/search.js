@@ -65,7 +65,7 @@ export const getServerSideProps = async ({ query }) => {
   
     return {
       props: {
-        properties: data?.hits,
+        properties: [...data?.hits],
       }
     }
 }
